@@ -6,12 +6,16 @@
     <title>Daily Task Manager</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
+    <style>
+        body {
+            background-color: #708059;
+        } 
+    </style>
 </head>
 <body>
     <div style="margin-top: 25px" class="ui container">
-    <h1 class="ui center aligned header">DAILY TASK MANAGER</h1>
-    <div class="ui attached blue message">
+    <h1 style="font-size: 50px"class="ui center aligned header">Daily Task Manager</h1>
+    <div class="ui blue message">
         <div class="header">
             Welcome to the Daily Task Manager.
         </div>
@@ -20,11 +24,11 @@
     </div>
     <form class="ui form" action="/add" method="post">
         <div class="black field">
-            <label style="font-size: 15px" class="ui large black label" for="title">Task Creator</label>
+            
             <input type="text" name="title" placeholder="Name the Task">
             <br>
             <button class="ui black animated fade button" type="submit">
-                <div class="visible content">Add Task</div>
+                <div class="visible content">Create Task</div>
                 <div class="hidden content">
                     <i class="blue plus icon"></i>
                 </div>
