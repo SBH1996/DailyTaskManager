@@ -45,9 +45,6 @@ def delete(todo_id):
 
 if __name__ == "__main__":
     db.create_all()
-    from waitress import serve
-    serve(app, host="0.0.0.0", port=8080)
-
-$ python hello.py
+    app.run(host='0.0.0.0', port=8080, debug=True)
 
 
